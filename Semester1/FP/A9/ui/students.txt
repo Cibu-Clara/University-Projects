@@ -1,0 +1,16 @@
+2,Maria Popescu,912
+11,Eduard Robert,915
+17,Andrei Lazar,913
+29,Ioana Pop,914
+35,David Luca,913
+47,laura,911
+56,Laurentiu Cosma,913
+77,Giulia David,914
+80,Ilie Schiau,916
+99,Carina Morariu,915
+101,Clara, 911
+105,clr,914
+111,stf,914
+127,lui,914
+131,den,911
+141,bb,916
