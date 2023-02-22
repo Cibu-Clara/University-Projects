@@ -1,0 +1,5 @@
+5;Which is the capital of Romania?;Bucharest;54
+2;What's my name?;Clara;5
+1;What's my favorite color?;lila;71
+4;What subject is this?;OOP;40
+3;Who's my brother?;Cristi;8
