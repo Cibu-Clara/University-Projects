@@ -1,5 +1,5 @@
 # University-Projects
-UBB Computer Science
+Here are the projects and assignments done during my university years at UBB Computer Science.
 * [Semester 1](Semester1/)
     * [Computer Systems Architecture](Semester1/ASC/)
     * [Fundamentals of Programming](Semester1/FP/)
