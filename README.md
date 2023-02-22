@@ -5,3 +5,4 @@ UBB Computer Science
     * [Fundamentals of Programming](Semester1/FP/)
 * [Semester 2](Semester2/)
     * [Object Oriented Programming](Semester2/OOP/)
+    * [Data Structures and Algorithms](Semester2/DSA/)
