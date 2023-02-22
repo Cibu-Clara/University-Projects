@@ -1,0 +1,15 @@
+.button{
+-fx-background-color:  #ACE3D3;
+-fx-border-color:  #3F807A;
+-fx-effect: dropshadow(three-pass-box ,rgba(0,0,0,0.6),5,0.0 ,0 ,1 );
+}
+
+.button:hover{
+-fx-background-color: linear-gradient( #ACE3D3,#3F807A);
+}
+
+.button:pressed{
+-fx-background-color:  #ACE3D3;
+-fx-border-color:  #3F807A;
+-fx-effect: dropshadow(three-pass-box ,rgba(0,0,0,0.6),5,0.0 ,0 ,1 );
+}

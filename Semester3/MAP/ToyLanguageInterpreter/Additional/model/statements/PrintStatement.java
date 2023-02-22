@@ -1,0 +1,38 @@
+package model.statements;
+
+import exceptions.InterpreterException;
+import model.ADTs.MyIDictionary;
+import model.types.Type;
+import model.values.Value;
+import model.expressions.Expression;
+import model.ADTs.MyIList;
+import model.programState.ProgramState;
+public class PrintStatement implements iStatement{
+    Expression expression;
+
+    public PrintStatement(Expression expression) {this.expression = expression;}
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String,Type> typeEnv) throws InterpreterException {
+        expression.typeCheck(typeEnv);
+        return typeEnv;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Print(%s)", expression.toString());
+    }
+
+    @Override
+    public ProgramState execute(ProgramState state) throws InterpreterException {
+        MyIList<Value> out = state.getOut();
+        out.add(expression.eval(state.getSymTable(), state.getHeapTable()));
+        state.setOut(out);
+        return null;
+    }
+
+    @Override
+    public iStatement deepCopy() {
+        return new PrintStatement(expression.deepCopy());
+    }
+}
