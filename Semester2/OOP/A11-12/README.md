@@ -1,6 +1,6 @@
-# 💻 Assignment 11-12
+# 💻 Assignment 11-12 
 
-## Requirements
+## :folder: Requirements
 - Create a graphical user interface using the Qt framework for the problem you have been working on (A5-6, A8-9).
 
 ## Week 11
