@@ -9,3 +9,4 @@ UBB Computer Science
 * [Semester 3](Semester3/)
     * [Advanced Programming Methods](Semester3/MAP/)
     * [Data bases](Semester3/DB/)
+    * [Functional and logic programming](Semester3/PLF/)
