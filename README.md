@@ -13,3 +13,4 @@ Here are the projects and assignments done during my studying years at UBB Compu
 * [📂 Semester 4](Semester4/)
     * [Systems for Design and Implementation](Semester4/SDI/)
     * [Artificial Intelligence](Semester4/AI/)
+    * [Web Programming](Semester4/Web/)
