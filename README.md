@@ -10,3 +10,5 @@ Here are the projects and assignments done during my studying years at UBB Compu
     * [Advanced Programming Methods](Semester3/MAP/)
     * [Data bases](Semester3/DB/)
     * [Functional and logic programming](Semester3/PLF/)
+* [📂 Semester 4](Semester4/)
+    * [Systems for Design and Implementation](Semester4/SDI/)
