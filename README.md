@@ -12,3 +12,4 @@ Here are the projects and assignments done during my studying years at UBB Compu
     * [Functional and logic programming](Semester3/PLF/)
 * [📂 Semester 4](Semester4/)
     * [Systems for Design and Implementation](Semester4/SDI/)
+    * [Artificial Intelligence](Semester4/AI/)
