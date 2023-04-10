@@ -1,0 +1,139 @@
+body {margin:0;}
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    font-family: 'Proxima Nova,Helvetica,Arial',sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.nav_left {
+    font-family: 'Proxima Nova,Helvetica,Arial',sans-serif;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 590;
+    font-size: 15px;
+}
+
+.nav_right {
+    float:right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 590;
+    font-size: 15px;
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: #fff300;
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: auto;
+    width: 75%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 4fr 2fr;
+}
+
+.left-main {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+}
+
+.main-article {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.75rem;
+    line-height: normal;
+    font-weight: 700;
+    font-family: Proxima Nova,Helvetica,Arial,sans-serif;
+    margin: 5px;
+    background: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+}
+
+.right-main {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-column-start: 2;
+    grid-template-rows: 2fr 4fr;
+}
+
+.news {
+    height: fit-content;
+    width: auto;
+    border: #c7c7c760 solid 1px;
+    border-top: black solid 8px;
+    box-shadow: 0px 1px 1px #c7c7c730;
+    margin: 5px 5px 10px 15px;
+    border-radius: 4px;
+    padding: 0px 15px;
+    background: white;
+    color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 28% 29% 28%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.image {
+    display: grid;
+    flex-basis: 30%
+}
+
+.text {
+    font-size: 1px;
+    padding-left: 1px;
+}
+
+.news-link {
+    font-size: .9rem;
+}
