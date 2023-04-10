@@ -1,0 +1,11 @@
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\bin\Debug\Untold_windows_form_app.exe.config
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\bin\Debug\Untold_windows_form_app.exe
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\bin\Debug\Untold_windows_form_app.pdb
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.csproj.AssemblyReference.cache
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.csproj.SuggestedBindingRedirects.cache
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.Properties.Resources.resources
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.csproj.GenerateResource.cache
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.csproj.CoreCompileInputs.cache
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.exe
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.pdb
+C:\Users\Clara\RiderProjects\Untold_windows_form_app\Untold_windows_form_app\obj\Debug\Untold_windows_form_app.Form1.resources
