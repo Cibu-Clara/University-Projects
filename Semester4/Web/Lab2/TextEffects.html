@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #36317a;
+            font-family: cursive;
+        }
+        .shadow {
+            text-shadow: 2px 2px #00ffb2;
+        }
+
+        .glow {
+            font-size: 70px;
+            color: #fff;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        .glow2 {
+            color: #fff;
+            text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #0ff;
+        }
+
+        .fire {
+            color: #f00;
+            animation: burn 1s infinite;
+        }
+
+        .underline {
+            position: relative;
+            font-size: 0;
+        }
+
+        .underline span {
+            position: relative;
+            display: inline-block;
+            font-size: 24px; /* set the font size you want */
+        }
+
+        .underline span::before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            height: 2px;
+            background-color: #cc3c3c;
+            width: 0;
+            transition: width 0.2s ease-in-out;
+        }
+
+        .underline span:hover::before {
+            width: 100%;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+
+        @keyframes burn {
+            0% {color: #f00;}
+            50% {color: #ff0;}
+            100% {color: #f00;}
+        }
+    </style>
+    <title>Text Effects</title>
+</head>
+<body>
+<h1 class="glow">Laboratory 2</h1>
+<h1 class="shadow">Text shadowing effect!</h1>
+<h1 class="glow2">Text glowing effect!</h1>
+<h1 class="fire">Text on fire effect!</h1>
+<h1 class="underline">
+    <span>U</span>
+    <span>n</span>
+    <span>d</span>
+    <span>e</span>
+    <span>r</span>
+    <span>l</span>
+    <span>i</span>
+    <span>n</span>
+    <span>e</span>
+    <span>!</span>
+</h1>
+</body>
+</html>

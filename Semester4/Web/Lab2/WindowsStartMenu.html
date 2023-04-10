@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-image: url("windows.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: cursive;
+    }
+
+    /* Windows-style vertical menu with expandable submenus*/
+    #menu {
+      background-color: #1c1c1c;
+      color: #fff;
+      width: 300px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+    }
+
+    /* Styles for the main menu items */
+    .menu-item {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.2s ease;
+    }
+
+    .menu-item:hover {
+      background-color: #444;
+    }
+
+    /* Styles for the submenu items */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 300px;
+      padding: 20px;
+      background-color: #444;
+    }
+
+    .menu-item:hover > .submenu {
+      display: block;
+    }
+
+    .submenu .submenu-item {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.2s ease;
+    }
+
+    .submenu .submenu-item:hover {
+      background-color: #666;
+    }
+
+    /* Styles for the second level submenu items */
+    .submenu .submenu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 300px;
+      padding: 20px;
+      background-color: #666;
+    }
+
+    .submenu .submenu-item:hover > .submenu {
+      display: block;
+    }
+
+    .submenu .submenu .submenu-item {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .submenu .submenu .submenu-item:hover {
+      background-color: #888;
+    }
+  </style>
+  <title>Windows Start Menu</title>
+</head>
+<body>
+<div id="menu" style="font-size:12px">Recents
+  <div class="menu-item" style="font-size:16px">
+    <img src="cmd.png"
+         style="float:left; width:25px; height:25px;">Command Prompt
+  </div>
+  <div class="menu-item" style="font-size:16px">
+    <img src="settings.png"
+         style="float:left; width:25px; height:25px;">Settings
+    <div class="submenu">
+      <div class="submenu-item">
+        <img src="blue.png"
+             style="float:left; width:25px; height:25px;">Bluetooth & Devices
+      </div>
+      <div class="submenu-item">
+        <img src="net.png"
+             style="float:left; width:25px; height:25px;">Network & Internet
+        <div class="submenu">
+          <div class="submenu-item">
+            <img src="wifi.png"
+                 style="float:left; width:25px; height:25px;">Wi-Fi Settings
+          </div>
+          <div class="submenu-item">
+            <img src="mobile.png"
+                 style="float:left; width:25px; height:25px;">Mobile Hotspot
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item" style="font-size:16px">
+    <img src="files.png"
+         style="float:left; width:25px; height:25px;">File Explorer
+    <div class="submenu">
+      <div class="submenu-item">
+        <img src="pc.png"
+             style="float:left; width:25px; height:25px;">This PC
+        <div class="submenu">
+          <div class="submenu-item">
+            Local Disk (C:)
+          </div>
+          <div class="submenu-item">
+            Local Disk (D:)
+          </div>
+        </div>
+      </div>
+      <div class="submenu-item">
+        <img src="desk.png"
+             style="float:left; width:25px; height:25px;">Desktop
+      </div>
+      <div class="submenu-item">
+        <img src="doc.png"
+             style="float:left; width:25px; height:25px;">Documents
+      </div>
+      <div class="submenu-item">
+        <img src="down.png"
+             style="float:left; width:25px; height:25px;">Downloads
+      </div>
+    </div>
+  </div>
+  <div class="menu-item" style="font-size:16px">
+    <img src="mail.png"
+         style="float:left; width:25px; height:25px;">Mail
+  </div>
+  <div class="menu-item" style="font-size:16px">
+    <img src="google.png"
+         style="float:left; width:25px; height:25px;">Google Chrome
+  </div>
+  <div class="menu-item" style="font-size:16px">
+    <img src="teams.png"
+         style="float:left; width:25px; height:25px;">Microsoft Teams
+  </div>
+  <div class="menu-item" style="font-size:16px">
+    <img src="py.png"
+         style="float:left; width:25px; height:25px;">PyCharm
+  </div>
+  <div class="menu-item" style="font-size:16px">
+    <img src="int.png"
+         style="float:left; width:25px; height:25px;">IntelliJ
+  </div>
+</div>
+</body>
+</html>
