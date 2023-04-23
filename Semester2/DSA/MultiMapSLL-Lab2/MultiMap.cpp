@@ -5,64 +5,121 @@
 
 using namespace std;
 
-
+// Complexity: Theta(1)
 MultiMap::MultiMap() {
-	this->head = nullptr;
-	this->nr_elems = 0;
+    this->head = nullptr;
+    this->nr_elems = 0;
 }
 
-
+// Complexity: Theta(1)
 void MultiMap::add(TKey c, TValue v) {
-	SLLKey* key_sll = this->getKey(c);
-	SLLNode* new_node = new SLLNode[1];
-	new_node->value = v;
-	new_node->next = nullptr;
-	this->nr_elems++;
-	//if the key is already in the SLL
-	if (key_sll != nullptr) {
-		new_node->next = key_sll->head;
-		key_sll->head = new_node;
-		//if the key is not in the SLL
-	}
-	else {
-		SLLKey* new_key = new SLLKey[1];
-		new_key->key = c;
-		new_key->next = this->head;
-		this->head = new_key;
-		new_key->head = new_node;
-	}
+    SLLNode* new_node = new SLLNode[1];
+    new_node->data = std::make_pair(c, v);
+    new_node->next = nullptr;
+    if (this->head == nullptr)
+    {
+        this->head = new_node;
+    }
+    else
+    {
+        new_node->next = this->head;
+        this->head = new_node;
+    }
+    this->nr_elems++;
 }
 
-
+// Complexity:
+    //		BC : Theta(1)
+    //      WC : Theta(nr_elems) 
+    //		=> total: O(nr_elems)
 bool MultiMap::remove(TKey c, TValue v) {
-	//TODO - Implementation
-	return  false;
+    SLLNode* current = this->head;
+    SLLNode* prev = nullptr;
+    if (current == nullptr)
+        return false;
+    if (current->data.first == c && current->data.second == v) {
+        this->head = current->next;
+        delete current;
+        this->nr_elems--;
+        return true;
+    }
+    prev = current;
+    current = current->next;
+    while (current != nullptr)
+    {
+        if (current->data.first == c && current->data.second == v)
+        {
+            prev->next = current->next;
+            delete current;
+            this->nr_elems--;
+            return true;
+        }
+        prev = current;
+        current = current->next;
+    }
+    return false;
 }
 
-
+// Complexity:
+    //		BC : Theta(1)
+    //      WC : Theta(nr_elems) 
+    //		=> total: O(nr_elems)
 vector<TValue> MultiMap::search(TKey c) const {
-	//TODO - Implementation
-	return vector<TValue>();
+    SLLNode* current = this->head;
+    vector<TValue> result;
+    while (current != nullptr)
+    {
+        if (current->data.first == c)
+        {
+            result.push_back(current->data.first);
+        }
+        current = current->next;
+    }
+    return result;
 }
 
-
+// Complexity: Theta(1) - we keep track of the number of values in the list
 int MultiMap::size() const {
-	//TODO - Implementation
-	return 0;
+    return this->nr_elems;
 }
 
-
+// Complexity: Theta(1)
 bool MultiMap::isEmpty() const {
-	//TODO - Implementation
-	return false;
+    return this->head == nullptr;
 }
 
+// Complexity:
+void MultiMap::empty()
+{
+    SLLNode* current = this->head;
+    SLLNode* prev = nullptr;
+    while (current != nullptr)
+    {
+        prev = current;
+        current = current->next;
+        delete prev;
+    }
+    this->head = nullptr;
+    this->nr_elems = 0;
+
+}
+
+// Complexity: Theta(1)
 MultiMapIterator MultiMap::iterator() const {
-	return MultiMapIterator(*this);
+    return MultiMapIterator(*this);
 }
 
-
+// Complexity:
+    //		BC : Theta(1)
+    //      WC : Theta(nr_elems) 
+    //		=> total: O(nr_elems)
 MultiMap::~MultiMap() {
-	//TODO - Implementation
+    SLLNode* current = this->head;
+    SLLNode* prev = nullptr;
+    while (current != nullptr)
+    {
+        prev = current;
+        current = current->next;
+        delete prev;
+    }
 }
-
