@@ -10,8 +10,8 @@ using namespace std;
 int main() {
 
 
-	//testAll();
-	//testAllExtended();
+	testAll();
+	testAllExtended();
 	cout << "End" << endl;
 	system("pause");
 
