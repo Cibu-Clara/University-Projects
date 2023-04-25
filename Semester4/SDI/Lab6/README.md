@@ -1,5 +1,5 @@
 # Lab 6 assignment
-
+ 
 **Points**: 0.3, 0.3 Bonus
 
 **Deadline**: Week 7
