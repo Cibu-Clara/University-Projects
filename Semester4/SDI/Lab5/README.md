@@ -1,4 +1,4 @@
-## Lab 5 assignment
+# Lab 5 assignment
 
 **Points**: 0.3
 
