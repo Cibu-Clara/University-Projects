@@ -1,0 +1,806 @@
+openapi: 3.0.3
+info:
+  title: Music API
+  version: 0.0.0
+paths:
+  /albums/:
+    get:
+      operationId: albums_retrieve
+      tags:
+      - albums
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Album'
+          description: ''
+    post:
+      operationId: albums_create
+      tags:
+      - albums
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Album'
+          description: ''
+  /albums/{id}/:
+    get:
+      operationId: albums_retrieve_2
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - albums
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: albums_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - albums
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Album'
+          description: ''
+    patch:
+      operationId: albums_partial_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - albums
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Album'
+          description: ''
+    delete:
+      operationId: albums_destroy
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - albums
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '204':
+          description: No response body
+  /artists/:
+    get:
+      operationId: artists_retrieve
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artist'
+          description: ''
+    post:
+      operationId: artists_create
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artist'
+          description: ''
+  /artists/{id}/:
+    get:
+      operationId: artists_retrieve_2
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artist'
+          description: ''
+    post:
+      operationId: artists_create_2
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: artists_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artist'
+          description: ''
+    patch:
+      operationId: artists_partial_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Artist'
+          description: ''
+    delete:
+      operationId: artists_destroy
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '204':
+          description: No response body
+  /artists/order-by-views/:
+    get:
+      operationId: artists_order_by_views_retrieve
+      tags:
+      - artists
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtistViewsStatistics'
+          description: ''
+  /performances/:
+    get:
+      operationId: performances_retrieve
+      tags:
+      - performances
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PerformsOn'
+          description: ''
+    post:
+      operationId: performances_create
+      tags:
+      - performances
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PerformsOn'
+          description: ''
+  /performances/{id}/:
+    get:
+      operationId: performances_retrieve_2
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - performances
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: performances_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - performances
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PerformsOn'
+          description: ''
+    patch:
+      operationId: performances_partial_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - performances
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PerformsOn'
+          description: ''
+    delete:
+      operationId: performances_destroy
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - performances
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '204':
+          description: No response body
+  /schema/:
+    get:
+      operationId: schema_retrieve
+      description: |-
+        OpenApi3 schema for this API. Format can be selected via content negotiation.
+
+        - YAML: application/vnd.oai.openapi
+        - JSON: application/vnd.oai.openapi+json
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - json
+          - yaml
+      - in: query
+        name: lang
+        schema:
+          type: string
+          enum:
+          - af
+          - ar
+          - ar-dz
+          - ast
+          - az
+          - be
+          - bg
+          - bn
+          - br
+          - bs
+          - ca
+          - cs
+          - cy
+          - da
+          - de
+          - dsb
+          - el
+          - en
+          - en-au
+          - en-gb
+          - eo
+          - es
+          - es-ar
+          - es-co
+          - es-mx
+          - es-ni
+          - es-ve
+          - et
+          - eu
+          - fa
+          - fi
+          - fr
+          - fy
+          - ga
+          - gd
+          - gl
+          - he
+          - hi
+          - hr
+          - hsb
+          - hu
+          - hy
+          - ia
+          - id
+          - ig
+          - io
+          - is
+          - it
+          - ja
+          - ka
+          - kab
+          - kk
+          - km
+          - kn
+          - ko
+          - ky
+          - lb
+          - lt
+          - lv
+          - mk
+          - ml
+          - mn
+          - mr
+          - ms
+          - my
+          - nb
+          - ne
+          - nl
+          - nn
+          - os
+          - pa
+          - pl
+          - pt
+          - pt-br
+          - ro
+          - ru
+          - sk
+          - sl
+          - sq
+          - sr
+          - sr-latn
+          - sv
+          - sw
+          - ta
+          - te
+          - tg
+          - th
+          - tk
+          - tr
+          - tt
+          - udm
+          - uk
+          - ur
+          - uz
+          - vi
+          - zh-hans
+          - zh-hant
+      tags:
+      - schema
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/vnd.oai.openapi:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/yaml:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/vnd.oai.openapi+json:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+  /songs/:
+    get:
+      operationId: songs_retrieve
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Song'
+          description: ''
+    post:
+      operationId: songs_create
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Song'
+          description: ''
+  /songs/{id}/:
+    get:
+      operationId: songs_retrieve_2
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Song'
+          description: ''
+    put:
+      operationId: songs_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Song'
+          description: ''
+    patch:
+      operationId: songs_partial_update
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Song'
+          description: ''
+    delete:
+      operationId: songs_destroy
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '204':
+          description: No response body
+  /songs/filter-by-year/{year}/:
+    get:
+      operationId: songs_filter_by_year_retrieve
+      parameters:
+      - in: path
+        name: year
+        schema:
+          type: integer
+        required: true
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Song'
+          description: ''
+  /songs/order-by-performances/:
+    get:
+      operationId: songs_order_by_performances_retrieve
+      tags:
+      - songs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SongsNumberStatistics'
+          description: ''
+components:
+  schemas:
+    Album:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        album_title:
+          type: string
+          maxLength: 100
+        nr_of_tracks:
+          type: integer
+        label:
+          type: string
+          maxLength: 100
+        year_of_release:
+          type: integer
+        main_artist:
+          type: integer
+      required:
+      - album_title
+      - id
+      - label
+      - main_artist
+      - nr_of_tracks
+      - year_of_release
+    Artist:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        artist_name:
+          type: string
+          maxLength: 100
+        real_name:
+          type: string
+          maxLength: 100
+        country:
+          type: string
+          maxLength: 100
+        email:
+          type: string
+          format: email
+          maxLength: 100
+        songs:
+          type: array
+          items:
+            $ref: '#/components/schemas/Song'
+        albums:
+          type: array
+          items:
+            type: integer
+      required:
+      - albums
+      - artist_name
+      - country
+      - email
+      - id
+      - real_name
+      - songs
+    ArtistViewsStatistics:
+      type: object
+      properties:
+        artist_name:
+          type: string
+          maxLength: 100
+        avg_views:
+          type: integer
+          readOnly: true
+      required:
+      - artist_name
+      - avg_views
+    PerformsOn:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        nr_of_views:
+          type: integer
+        duration:
+          type: string
+          maxLength: 10
+        song:
+          type: integer
+        artist:
+          type: integer
+      required:
+      - artist
+      - duration
+      - id
+      - nr_of_views
+      - song
+    Song:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        song_name:
+          type: string
+          maxLength: 100
+        composer:
+          type: string
+          maxLength: 100
+        genre:
+          type: string
+          maxLength: 100
+        year_of_release:
+          type: integer
+          maximum: 2023
+          minimum: 1800
+        artists:
+          type: array
+          items:
+            type: integer
+          readOnly: true
+      required:
+      - artists
+      - composer
+      - genre
+      - id
+      - song_name
+      - year_of_release
+    SongsNumberStatistics:
+      type: object
+      properties:
+        song_name:
+          type: string
+          maxLength: 100
+        nr_performances:
+          type: integer
+          readOnly: true
+      required:
+      - nr_performances
+      - song_name
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid
