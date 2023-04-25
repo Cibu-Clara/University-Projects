@@ -1,13 +1,16 @@
 #pragma once
 #include<vector>
 #include<utility>
+
 using namespace std;
 
 typedef int TKey;
 typedef int TValue;
 typedef std::pair<TKey, TValue> TElem;
+
 #define NULL_TVALUE -111111
 #define NULL_TELEM pair<int,int>(-111111, -111111)
+
 class MultiMapIterator;
 
 struct SLLNode {
@@ -22,6 +25,7 @@ class MultiMap
 private:
 	SLLNode* head;
 	int nr_elems;
+	//returns the node where the SLL of values begins, or nullptr if the key is not in the SLL.
 
 public:
 	//constructor
@@ -43,6 +47,9 @@ public:
 	//checks whether the multimap is empty
 	bool isEmpty() const;
 
+	//removes all elements from the multimap
+	void empty();
+
 	//returns an iterator for the multimap
 	MultiMapIterator iterator() const;
 
@@ -51,4 +58,3 @@ public:
 
 
 };
-

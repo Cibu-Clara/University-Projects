@@ -9,9 +9,8 @@ class MultiMapIterator
 
 private:
 	const MultiMap& col;
-	//TODO - Representation
+	SLLNode* current_node;
 
-	//DO NOT CHANGE THIS PART
 	MultiMapIterator(const MultiMap& c);
 
 public:

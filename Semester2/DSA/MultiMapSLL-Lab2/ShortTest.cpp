@@ -39,4 +39,8 @@ void testAll() {
 	assert(im.valid() == false);
 	im.first();
 	assert(im.valid() == true);
+
+	assert(m.size() != 0);
+	m.empty();
+	assert(m.size() == 0);
 }
