@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Dialog Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+        #dialog-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .dialog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: move;
+            background-color: #f6f6f6;
+            padding: 10px;
+        }
+
+        .dialog-header h2 {
+            margin: 0;
+        }
+
+        .dialog-header button {
+            background-color: white;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: black;
+            padding: 5px 10px;
+        }
+
+        .dialog-header button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button id="open-dialog-btn">Open Dialog</button>
+<div id="dialog-box">
+    <div class="dialog-header">
+        <h2>Dialog Box</h2>
+        <button id="close-dialog-btn">&times;</button>
+    </div>
+    <p>This is the content of the dialog window.</p>
+    <p>You can move this dialog window around by dragging the title bar.</p>
+</div>
+
+<script>
+    $(document).ready(function () {
+        let isDragging = false;
+        let currentX;
+        let currentY;
+        let initialX;
+        let initialY;
+        let xOffset = 0;
+        let yOffset = 0;
+
+        $("#open-dialog-btn").click(function () {
+            $("#dialog-box").fadeIn();
+        });
+
+        $("#close-dialog-btn").click(function () {
+            $("#dialog-box").fadeOut();
+        });
+
+        $(".dialog-header").on("mousedown", function (event) {
+            isDragging = true;
+            initialX = event.clientX - xOffset;
+            initialY = event.clientY - yOffset;
+        });
+
+        $(document).on("mouseup", function () {
+            isDragging = false;
+        });
+
+        $(document).on("mousemove", function (event) {
+            if (isDragging) {
+                currentX = event.clientX - initialX;
+                currentY = event.clientY - initialY;
+
+                xOffset = currentX;
+                yOffset = currentY;
+                $("#dialog-box").css({
+                    transform: "translate(" + currentX + "px, " + currentY + "px)",
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
