@@ -1,5 +1,5 @@
 # Lab 2
 
-- Write a web page which contains a div with a background image. When the mouse is over the div, the background image should change.
+- Develop a web site using CSS in which you should use various text effects like: - text glowing (i.e. white ambiental light illuminating the text) - text shadowing - text on fire - underline effect for each letter of a word
 
-- Write a web page which contains a div with a blue background color located on the top left corner of the page. When the mouse is over it the div should rotate and move to the right until it reaches the top right corner of the page. The div should not jump directly to the top right corner.
+- Write a web page which contains a vertical menu that mimics the "windows start menu". The menu is vertical and each menu item can contain a sumbenu in the right side and each item from that submenu can also expand (when the mouse is over it) to a submenu on the right side and so on..
