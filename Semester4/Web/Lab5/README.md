@@ -1,0 +1,3 @@
+# Lab 5
+
+Solve the following task using only the jQuery library (production version, jquery.min.js, or developement version, jquery.js); YOU ARE NOT ALLOWED TO USE ANY OTHER JS LIBRARY, PLUGIN OR EXTENSION BESIDES THE JQUERY LIBRARY. Write a web page which contains a button and if the user clicks that button, a dialog window (like the one from http://jqueryui.com/dialog/) will be displayed. That dialog window should display various information. The user should be able to move the window around in the browser window and also he/she can close the window by clicking on the 'x' icon. The dialog window does not need to be resizable.
