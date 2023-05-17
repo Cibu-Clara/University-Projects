@@ -1,4 +1,4 @@
-# Database Management Systems – Lab 1
+# Lab 1
 
 * assigned: weeks 1/2; due: weeks 5/6
 
