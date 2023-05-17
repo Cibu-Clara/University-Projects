@@ -15,8 +15,10 @@ if __name__ == '__main__':
                 sql = """TRUNCATE TABLE "Music_app_artist" RESTART IDENTITY CASCADE;\n \
                 TRUNCATE TABLE "Music_app_album" RESTART IDENTITY CASCADE;\n \
                 TRUNCATE TABLE "Music_app_song" RESTART IDENTITY CASCADE;\n \
-                TRUNCATE TABLE "Music_app_performson" RESTART IDENTITY CASCADE;\n """
-                file.write(sql + "\n")
+                TRUNCATE TABLE "Music_app_performson" RESTART IDENTITY CASCADE;\n
+                ALTER TABLE "Music_app_performson" DROP CONSTRAINT "Music_app_performson_song_id_76d3c742_fk_Music_app_song_id";\n \
+		    ALTER TABLE "Music_app_performson" DROP CONSTRAINT "Music_app_performson_artist_id_4d36423e_fk_Music_app_artist_id";\n """
+                file.write(sql + "\n") 
 
                 for i in range(0, 1000000, 1000):
                         artists = []
@@ -70,7 +72,7 @@ if __name__ == '__main__':
                                 print(f'{i*1000} done')
                         artist_id = fake.random_int(min=1, max=1000000)
                         performances = []
-                        for j in range(1000):
+                        for j in range(10):
                                 song_id = fake.random_int(min=1, max=1000000)
                                 nr_of_views = fake.random_int(min=0, max=70000000)
                                 minutes = fake.random_int(min=0, max=10)
@@ -82,3 +84,6 @@ if __name__ == '__main__':
 
                 print("PerformsOn added")
                 file.write("SELECT 'all done!' as msg;\n")
+                sql = f"""ALTER TABLE "Music_app_performson" ADD CONSTRAINT "Music_app_performson_song_id_76d3c742_fk_Music_app_song_id" FOREIGN KEY(song_id) REFERENCES "Music_app_song"(id) ON DELETE CASCADE;\n \
+	          ALTER TABLE "Music_app_performson" ADD CONSTRAINT "Music_app_performson_artist_id_4d36423e_fk_Music_app_artist_id" FOREIGN KEY(artist_id) REFERENCES "Music_app_artist"(id) ON DELETE CASCADE;\n """
+                file.write(sql + "\n")
