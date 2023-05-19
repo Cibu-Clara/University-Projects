@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Chain</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body class="center">
+<div>
+    <table class="my-table" id="data-table"></table>
+    <hr>
+    <div>
+        <div class="operation-buttons">
+            <button id="insert-button">INSERT</button>
+            <button id="delete-button">DELETE</button>
+            <button id="update-button">UPDATE</button>
+            <button id="clear-button">CLEAR</button>
+        </div>
+        <table>
+            <tr>
+                <td>ID:</td>
+                <td><label for="id-input"></label><input id="id-input" readonly type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>Client ID:</td>
+                <td><label for="client-id-input"></label><input id="client-id-input" placeholder="Client ID" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Room ID:</td>
+                <td><label for="room-id-input"></label><input id="room-id-input" placeholder="Room ID" type="text"></td>
+            </tr>
+            <tr>
+                <td>CheckIn:</td>
+                <td><label for="checkin-input"></label><input id="checkin-input" placeholder="CheckIn" type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td>CheckOut:</td>
+                <td><label for="checkout-input"></label><input id="checkout-input" placeholder="CheckOut" type="datetime-local">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <a class="back-link" href="../index.html">BACK</a>
+    </footer>
+</div>
+<script src="booking.js"></script>
+</body>
+</html>

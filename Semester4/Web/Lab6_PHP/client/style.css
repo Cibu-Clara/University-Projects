@@ -1,0 +1,81 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.main-page-link {
+    display: block;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: silver;
+}
+
+.main-page-link:hover {
+    color: #000000;
+}
+
+.my-table {
+    border-collapse: collapse;
+    width: 600px;
+    text-align: left;
+}
+
+.my-table > td {
+    padding: 8px;
+    border-bottom: 1px solid;
+}
+
+.my-table > tr:hover {
+    background-color: #ffffff;
+}
+
+.back-link {
+    font-size: 40px;
+    text-decoration: none;
+    color: silver;
+}
+
+.back-link:hover {
+    color: #000000;
+}
+
+.operation-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2px;
+}
+
+footer {
+    text-align: center;
+    width:100%;
+    height:80px;
+    position: absolute;
+    bottom: 10px;
+    left:0;
+}
+
+.page-selector-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 2px;
+}
+
+button {
+    border: none;
+    background-color: silver;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #e56c6c;
+}
+
+.main-page-link:active, footer:active, button:active {
+    transform: translateY(3px);
+}
