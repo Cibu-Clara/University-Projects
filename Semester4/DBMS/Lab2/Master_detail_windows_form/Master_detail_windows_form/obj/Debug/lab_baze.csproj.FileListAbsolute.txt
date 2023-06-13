@@ -1,0 +1,22 @@
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\bin\Debug\lab_baze.exe.config
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\bin\Debug\lab_baze.exe
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\bin\Debug\lab_baze.pdb
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.AssemblyReference.cache
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.Properties.Resources.resources
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.GenerateResource.cache
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.CoreCompileInputs.cache
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.exe
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.pdb
+C:\Users\Sicoe\RiderProjects\lab_baze\lab_baze\obj\Debug\lab_baze.Form1.resources
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\bin\Debug\lab_baze.exe.config
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\bin\Debug\lab_baze.exe
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\bin\Debug\lab_baze.pdb
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.AssemblyReference.cache
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.SuggestedBindingRedirects.cache
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.Form1.resources
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.Properties.Resources.resources
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.GenerateResource.cache
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.csproj.CoreCompileInputs.cache
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.exe
+C:\Users\Clara\Documents\Clara\UBB\semester IV\DBMS\lab_baze\lab_baze\obj\Debug\lab_baze.pdb
