@@ -1,6 +1,7 @@
 # Lab 2
 
-assigned: weeks 5/6; due: weeks 7/8
+* assigned: weeks 5/6; due: weeks 7/8
+
 Transform your first lab to dynamically create the master-detail windows form. The form caption and stored procedures / queries used to access and manipulate data will be set in a configuration file.
 
 You must prepare at least two different scenarios handling data from two different 1:n relationships.
