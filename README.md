@@ -15,3 +15,5 @@ Here are the projects and assignments done during my studying years at UBB Compu
     * [Artificial Intelligence](Semester4/AI/)
     * [Web Programming](Semester4/Web/)
     * [Database Management Systems](Semester4/DBMS/)
+* [📂 Semester 5](Semester5/)
+    * [Formal Languages and Compiler Design](Semester5/FLCD/)
