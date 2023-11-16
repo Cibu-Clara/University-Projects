@@ -1,0 +1,18 @@
+int n;
+bool is_prime;
+read(n);
+if (n <= 1):
+is_prime -> lie;
+else if (n <= 3):
+is_prime -> truth;
+else if (n mod 2 == 0):
+is_prime -> lie;
+else {
+for (int i = 5; i * i <= n; i += 2) {
+if (n mod i == 0):
+is_prime -> lie;
+}
+is_prime -> truth;
+}
+write(is_prime);
+exit(0);

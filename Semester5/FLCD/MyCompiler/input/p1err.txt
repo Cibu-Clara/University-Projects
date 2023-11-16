@@ -1,0 +1,12 @@
+int a;
+int b;
+read(a);
+read(b);
+loop (b != 0) {
+$
+int 1aux -> b;
+b -> a mod b;
+a -> 1aux;
+}
+write(a);
+exit(0);

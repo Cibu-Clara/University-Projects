@@ -1,0 +1,13 @@
+int n;
+int[] v;
+read(n);
+for (int i = 0; i < n; i+=1) {
+read(v[i]);
+}
+int max -> v[0];
+for (int i = 1; i < n; i+=1) {
+if (v[i] > max):
+max -> v[i];
+}
+write(max);
+exit(0);
