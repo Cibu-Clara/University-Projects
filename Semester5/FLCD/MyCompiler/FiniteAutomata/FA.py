@@ -25,7 +25,7 @@ class FA:
             if len(self.initial_state) == 0:
                 raise RuntimeError("Error while parsing initial state")
 
-            # FINAL STATES split by "," , remove unnecessary spaces
+            # FINAL STATES split by " " , remove unnecessary spaces
             # ONLY ONE FINAL STATE -> r
             self.final_states = f.readline().strip().replace(" ", "").split(",")
             if len(self.final_states) == 0:
@@ -48,17 +48,38 @@ class FA:
             state = self.initial_state
             for symbol in sequence:
                 transition_key = (state, symbol)
-                print(f"Transition key: {transition_key}")
+                # print(f"Transition key: {transition_key}")
                 if transition_key not in self.transition.keys():
-                    print("No transition defined for key.")
+                    # print("No transition defined for key.")
                     return False
                 next_states = self.transition[transition_key]
-                print(f"Next states: {next_states}")
+                # print(f"Next states: {next_states}")
                 state = next_states[0]
             return state in self.final_states
         return False
+
+    def is_identifier(self, token):
+        return self.check_sequence(token) and 'q1' in self.final_states
+
+    def is_integer_constant(self, token):
+        return self.check_sequence(token) and ('q2' in self.final_states or 'q3' in self.final_states)
 
     def __repr__(self):
         return " States: " + str(self.states) + "\n Alphabet: " + str(
             self.alphabet) + "\n Transition Functions: " + str(
             self.transition) + "\n Initial state: " + self.initial_state + "\n Final states: " + str(self.final_states)
+
+
+# fa = FA("../input/FA.in")
+#
+#
+# identifiers = ["variable", "0variable", "Invalid123", "_underscore"]
+# integer_constants = ["123", "07", "Invalid123", "1a", "0"]
+#
+# print("\nIdentifiers:")
+# for identifier in identifiers:
+#     print(f"{identifier}: {fa.check_sequence(identifier)}")
+#
+# print("\nInteger Constants:")
+# for integer_constant in integer_constants:
+#     print(f"{integer_constant}: {fa.check_sequence(integer_constant)}")
