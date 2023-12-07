@@ -1,6 +1,7 @@
 import re
 
 from SymbolTable import SymbolTable
+from FiniteAutomata.FA import FA
 
 
 class Scanner:
@@ -11,6 +12,7 @@ class Scanner:
         self.__program = None
         self.__pif = []
         self.__line_cnt = 0
+        self.__fa = FA("input/FA.in")
 
         try:
             self.read_tokens()
@@ -71,8 +73,7 @@ class Scanner:
         return line_elems
 
     def token_type(self, token):
-        match = re.match('^[a-z]+[a-z_0-9]*$', token)
-        if match is not None:
+        if self.__fa.is_identifier(token):
             return "identifier"
         string_match = re.match('"[^"]', token)
         if string_match is not None:
@@ -82,8 +83,7 @@ class Scanner:
             if char_match is not None:
                 return "character"
             else:
-                int_match = re.match('^0$|^(\+|-)?[1-9][0-9]*$', token)
-                if int_match is not None:
+                if self.__fa.is_integer_constant(token):
                     return "number"
         return 0
 
@@ -104,4 +104,4 @@ def test_p1err():
     scanner = Scanner("input/p1err.txt")
 
 
-test_p3()
+test_p1()
