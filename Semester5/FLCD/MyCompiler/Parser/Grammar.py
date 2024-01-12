@@ -64,6 +64,21 @@ class Grammar:
                     if value not in self.N[0].split() and value not in self.E[0].split() and value != Grammar.EPSILON:
                         return False
         return True
+    
+    def get_non_terminals(self):
+        return self.N
+
+    def get_terminals(self):
+        return self.E
+
+    def get_start_symbol(self):
+        return self.S
+
+    def get_productions(self):
+        return self.P
+
+    def get_productions_for_non_terminal(self, nt):
+        return self.P.get(nt, [])
 
     def __str__(self):
         result = "N = " + str(self.N) + "\n"
