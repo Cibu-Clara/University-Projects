@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaskApp</string>
+    <string name="save_task">Save Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="tasks">Tasks</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="add_task">Add Task</string>
+</resources>
