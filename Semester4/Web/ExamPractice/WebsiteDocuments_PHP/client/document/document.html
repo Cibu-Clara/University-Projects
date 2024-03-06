@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body class="center">
+<div>
+    <table class="my-table" id="data-table"></table>
+    <hr>
+    <div>
+        <div class="operation-buttons">
+            <button id="update-button">UPDATE</button>
+            <button id="clear-button">CLEAR</button>
+        </div>
+        <input id="id-input" type="hidden" value="" >
+        <table>
+            <tr>
+                <td>Keyword 1:</td>
+                <td><label for="keyword-1-input"></label><input id="keyword-1-input" placeholder="Keyword 1" type="text"></td>
+            </tr>
+            <tr>
+                <td>Keyword 2:</td>
+                <td><label for="keyword-2-input"></label><input id="keyword-2-input" placeholder="Keyword 2" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Keyword 3:</td>
+                <td><label for="keyword-3-input"></label><input id="keyword-3-input" placeholder="Keyword 3" type="text"></td>
+            </tr>
+            <tr>
+                <td>Keyword 4:</td>
+                <td><label for="keyword-4-input"></label><input id="keyword-4-input" placeholder="Keyword 4" type="text"></td>
+            </tr>
+            <tr>
+                <td>Keyword 5:</td>
+                <td><label for="keyword-5-input"></label><input id="keyword-5-input" placeholder="Keyword 5" type="text">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Search documents by keywords</h2>
+        <input id="search-keywords-input" placeholder="Keywords" type="text">
+        <button id="search-button">SEARCH</button>
+    </div>
+    <table class="my-table" id="search-results-table"></table>
+    <footer>
+        <a class="back-link" href="../index.html">BACK</a>
+    </footer>
+</div>
+<script src="document.js"></script>
+</body>
+</html>
