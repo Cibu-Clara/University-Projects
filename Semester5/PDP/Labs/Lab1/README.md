@@ -1,6 +1,6 @@
 # Lab 1 - "Non-cooperative" multithreading
 
-**Due**: weeek 4
+**Due**: week 4
 
 Each student will fully solve a single problem. However, looking at how to solve the others is highly recommended.
 
