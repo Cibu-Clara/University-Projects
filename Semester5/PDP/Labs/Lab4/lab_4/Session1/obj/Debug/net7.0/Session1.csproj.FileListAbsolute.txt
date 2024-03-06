@@ -1,0 +1,15 @@
+D:\Semester V\PDP\lab_4\Session1\bin\Debug\net7.0\Session1.exe
+D:\Semester V\PDP\lab_4\Session1\bin\Debug\net7.0\Session1.deps.json
+D:\Semester V\PDP\lab_4\Session1\bin\Debug\net7.0\Session1.runtimeconfig.json
+D:\Semester V\PDP\lab_4\Session1\bin\Debug\net7.0\Session1.dll
+D:\Semester V\PDP\lab_4\Session1\bin\Debug\net7.0\Session1.pdb
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.csproj.AssemblyReference.cache
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.AssemblyInfoInputs.cache
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.AssemblyInfo.cs
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.csproj.CoreCompileInputs.cache
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.dll
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\refint\Session1.dll
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.pdb
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\Session1.genruntimeconfig.cache
+D:\Semester V\PDP\lab_4\Session1\obj\Debug\net7.0\ref\Session1.dll

@@ -1,0 +1,23 @@
+Matrix Sizes:
+
+As the size of the matrices increases, the execution time for matrix multiplication also increases significantly.
+This is in line with the cubic time complexity (O(n^3)) of matrix multiplication. Larger matrices lead to longer execution times.
+For very large matrices, it becomes crucial to optimize the multiplication algorithm or leverage parallelism to manage the computational load effectively.
+
+Number of Tasks (Non-thread Pool Approach):
+
+Increasing the number of tasks (dividing the work into smaller chunks) generally leads to improved execution times.
+However, creating too many tasks may lead to inefficient context switching and thread creation, which can slow down the program.
+Finding the right balance between the number of tasks and execution time is essential. It depends on the available resources .
+
+Number of Threads (Non-thread Pool Approach):
+
+Increasing the number of threads can will reduce execution time, especially for multi-core machines.
+However, there is a point of diminishing returns. Beyond a certain number of threads, the overhead of managing threads can
+outweigh the benefits of parallelism, leading to performance degradation.
+
+Thread Pool (ThreadPoolExecutor) Parameters:
+
+Using a thread pool can provide a more efficient way to manage threads compared to manually creating and starting threads.
+Adjusting the core pool size, maximum pool size, queue capacity, and thread keep-alive time can significantly impact performance.
+The choice of thread rejection policy (e.g., Discard, Caller-runs) affects how the system handles tasks when the queue is full.

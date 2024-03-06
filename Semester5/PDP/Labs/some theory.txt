@@ -1,0 +1,45 @@
+THREAD: -> smallest unit of a program's execution, representing an independent flow of control
+-> they are concurrent, allowing multiple threads to run in parallel within a single program to perform tasks concurrently
+-> they improve program responsiveness
+-> they share the same memory space, which enables them to interact and communicate with one another
+
+MUTEX = Mutual Exclusion 
+ 
+Locks:  -> prevent thread interference, data corruption, race conditions
+	-> protect critical sections of code that should only be accessed by one thread at a time
+	-> help ensure that multiple threads do not access shared resources concurrently
+ex: ReentrantLock (general-purpose), ReadWriteLock, Condition, Semaphore
+Condition variable -> synchronization mechanism to enable threads to wait for a specific condition to become true before they proceed with their execution
+		   -> usually associated with locks
+main operations:
+1. await() -> causes the current thread to wait until a specific condition is met
+	   -> the thread releases the associated lock while waiting
+	   -> other threads can continue execution
+2. signal() -> used to signal one waiting thread that the condition they are waiting for is met
+3. signalAll() -> signals all waiting threads, allowing them to re-evaluate the condition and potentially proceed
+
+! A lock usually refers to mutex, but can be more advanced
+
+STATES OF A THREAD:
+- NEW
+- RUNNABLE
+- BLOCKED
+- WAITING
+- TIMED_WAITING
+- ZOMBIE (o crapat fara sa vr)
+- TERMINATED
+
+Methods on threads:
+- start()
+- run()
+- sleep()
+- join(): blocks the calling thread until the thread it is called on has finished execution
+- getState()
+- isDaemon()
+- setDaemon(boolean on)
+
+DAEMON THREAD: -> thread that runs in the background and provides services to other threads
+	-> they do not prevent the program from terminating; they're automatically terminated when all non-daemon threads have finished
+
+MONITOR = in concurrent programming (also known as parallel programming), a monitor is a synchronization construct that allows threads to have both mutual exclusion and the ability to wait (block) for a certain condition to become false.
+Lock fara conditional var -> mai brute force, cond var e un mecanism de notificare 

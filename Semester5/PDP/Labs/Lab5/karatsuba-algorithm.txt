@@ -1,0 +1,53 @@
+Time complexity :
+ O(n^log2(3)) time (~ O(n^1.585))
+
+ Where n is the number of digits of the numbers multiplying.
+
+ The algorithm is standardized for 4 digits ,but one can multiply as many digits taken into sets.
+
+ Algorithm Steps:
+
+ Compute starting set  (a*c)
+ Compute set after starting set may it be ending set (b*d)
+ Compute starting set with ending sets
+ Subtract values of step 3 from step2 from step1
+ Pad up (Add) 4 zeros to the number obtained from Step1, step2 value unchanged, and pad up two zeros to value obtained from step4.
+
+
+
+The key is the fact that Karatsuba has one less multiplication than the normal way
+
+The idea :
+// normal way of multiplication
+    20 *
+    31
+   ------
+  1*2  1*0
+  3*2  3*0
+
+// karatsuba way
+    (2 + 0 ) *
+    (3 + 1)
+  ------------
+  (2+0) * (3+1)
+  --------------
+  2*3 + 2*1 + 0*3 +0*1      sum = 6+2+0+0 =8
+  ---------------------     we take the first and last digit
+  6                 0       we get the middle digit by substracting the first and last digit from the sum
+  6        2        0       middle digit= sum -6 - 0 = 8-6 =2
+
+
+  Further explanation:
+     A(X) = a1* X + a0
+     B(X) = b1* X + b0
+
+     Prod(A(X), B(X)= a1*b1*X^2 + ((a1+a0)(b1+b0) - a0b0 - a1b1)) *X + a0b0
+
+  Each task operates independently on a portion of the result polynomial without sharing data.
+  The tasks do not have shared resources that require synchronization.
+  The calculations performed by different tasks do not interfere with each other, and they can be executed concurrently
+  without synchronization.
+
+  Using karatsuba algorithm is okay only for large vectors, otherwise we get error messages saying it is too fragmented .
+  The Karatsuba algorithm is faster for larger polynomials due to its divide-and-conquer approach, and parallelization
+  further enhances its performance.

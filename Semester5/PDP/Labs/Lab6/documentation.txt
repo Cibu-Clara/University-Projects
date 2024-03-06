@@ -1,0 +1,21 @@
+1. A Hamiltonian cycle is a cycle that visits each vertex of the graph exactly once and returns to the starting vertex.
+The usual algorithm uses a depth-first search (DFS) to explore possible paths through the graph.
+
+
+2. Parallelization of the Algorithm:
+
+In the parallelized variant, multiple threads are used to speed up the search for a Hamiltonian cycle.
+The parallelization primarily focuses on exploring different paths concurrently.
+
+How the parallelization works:
+    Dividing the Work: The work is divided into multiple tasks, each responsible for finding a Hamiltonian path starting from a fixed vertex.
+                       These tasks run in parallel to explore different possibilities.
+    Thread Synchronization: To avoid data races and ensure that each task works with its copy of the path, the algorithm
+                            uses thread synchronization mechanisms, such as creating separate path arrays for each task
+                            and passing these as parameters.
+    Parallel Execution: The tasks are executed concurrently using an ExecutorService, allowing multiple threads to work
+                        on different paths simultaneously.
+
+3. Time measurements :
+     Having multiple threads working in parallel and trying to find the Hamiltonian cycle is way faster than the sequential
+     search .
