@@ -19,3 +19,4 @@ Here are the projects and assignments done during my studying years at UBB Compu
     * [Formal Languages and Compiler Design](Semester5/FLCD/)
     * [Mobile Applications](Semester5/MA/)
     * [Public Key Cryptography](Semester5/PK_Cryptography/)
+    * [Parallel and Distributed Programming](Semester5/PDP/)
